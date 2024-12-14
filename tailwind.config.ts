@@ -8,15 +8,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#0f172a',
-        secondary: '#1e293b',
-        accent: '#3b82f6'
-      }
-    }
+        primary: '#0a0f1a',
+        secondary: '#1a1f2e',
+        accent: '#3b82f6',
+        cyber: {
+          blue: '#0ea5e9',
+          purple: '#8b5cf6',
+          green: '#10b981',
+          red: '#ef4444',
+          yellow: '#f59e0b',
+        },
+      },
+      backgroundImage: {
+        'cyber-gradient': 'linear-gradient(to right, var(--tw-gradient-stops))',
+      },
+    },
   },
   plugins: [
-    require('@tailwindcss/typography')
-  ]
+    require('@tailwindcss/typography'),
+  ],
 };
 
 export default config;
