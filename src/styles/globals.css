@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply text-gray-100;
+}
+
+.prose {
+  @apply prose-invert max-w-none;
+}
